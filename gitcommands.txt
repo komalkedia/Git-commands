@@ -25,3 +25,18 @@ git reset
 
 show status of files in working/staging area
 git status
+
+Show log
+git log
+
+show difference / modifications in files
+git diff
+
+add remote origin
+git remote add origin https://github.com/komalkedia/test.git
+
+pull from remote directory
+git pull origin master
+
+push to remote repository
+git push -u origin master
