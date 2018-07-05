@@ -1,0 +1,23 @@
+initialize repository:
+git init
+remove repository:
+rm -rf
+
+to exclude files:
+touch .gitignore
+it will create .gitignore file
+
+add 1 file to staging area
+git add filename
+
+add all files to staging area
+git add -A
+
+to commit 
+git commit
+
+to remove 1 file
+git reset filename
+
+reset everything from staging area
+git reset
