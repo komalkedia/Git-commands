@@ -67,3 +67,18 @@ git branch --merged
 
 Delete branch
 git branch -d branchname
+
+delete branch from remote
+git push origin --delete branchname
+
+
+git branch new
+git checkout new
+git status
+git add -A
+git commit -m 'msg'
+git push -u origin new
+git checkout master
+git pull origin master
+git merge new
+git push origin master
