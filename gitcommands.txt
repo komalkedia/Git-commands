@@ -13,6 +13,7 @@ git add filename
 
 add all files to staging area
 git add -A
+git add .
 
 to commit 
 git commit -m "message"
@@ -28,6 +29,8 @@ git status
 
 Show log
 git log
+git log --stat
+git reflog
 
 show difference / modifications in files
 git diff
@@ -82,3 +85,41 @@ git checkout master
 git pull origin master
 git merge new
 git push origin master
+
+
+ammend message or file
+git commit --amend
+
+move commit from 1 branch to another
+git cherry-pick <6-7 character fro hash log>
+
+clean all changes including new files
+git clean -df
+
+only modified files reset
+git reset --hard <hash>
+
+to revert locally and then commit
+git revert <hash>
+
+before move to master branch, save current branch changes if its not completed
+git stash save  "message"
+apply stash changes when back to this branch, or need to merge this changes
+git stash list
+gives stash no.
+git stash apply <stash no.>
+or
+git stash pop
+
+delete stash
+git stash drop <stash no>
+git stash clear
+
+get first checkout
+git checkout -- .
+
+
+sourcegear diffmerge
+for diff tool
+git difftool
+git mergetool
