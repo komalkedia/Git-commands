@@ -39,4 +39,17 @@ pull from remote directory
 git pull origin master
 
 push to remote repository
+git push origin master
+
+with username and password
 git push -u origin master
+
+create a branch in local
+git branch branchname
+
+show all branches
+git branch
+
+branch
+git branch -a
+
