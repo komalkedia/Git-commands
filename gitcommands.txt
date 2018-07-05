@@ -50,6 +50,17 @@ git branch branchname
 show all branches
 git branch
 
-branch
+show all branches in remote
 git branch -a
 
+checkout to branch
+git checkout branchname
+
+checkout to master branch
+git checkout master
+
+merge changes from branch to master
+git merge branchname
+
+see merged branches
+git branch --merged
