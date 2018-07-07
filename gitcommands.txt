@@ -75,6 +75,7 @@ delete branch from remote
 git push origin --delete branchname
 
 
+process to create branch and merge
 git branch new
 git checkout new
 git status
