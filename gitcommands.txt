@@ -41,6 +41,10 @@ git remote add origin https://github.com/komalkedia/test.git
 pull from remote directory
 git pull origin master
 
+fatal: refusing to merge unrelated histories
+git pull origin master --allow-unrelated-histories
+
+
 push to remote repository
 git push origin master
 
