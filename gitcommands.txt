@@ -44,6 +44,10 @@ git pull origin master
 fatal: refusing to merge unrelated histories
 git pull origin master --allow-unrelated-histories
 
+Error: Untracked working tree file ‘xxxxx’ would be overwritten by merge.
+git fetch --all
+git reset --hard origin/master
+This grabs the latest repository files without merging and resets the master branch and overwrites the modified ones.
 
 push to remote repository
 git push origin master
