@@ -132,3 +132,9 @@ sourcegear diffmerge
 for diff tool
 git difftool
 git mergetool
+
+Revert last commit from remote:
+Set the local branch one revision back (HEAD^ means one revision back):
+git reset --hard HEAD^
+Push the changes to origin:
+git push --force
