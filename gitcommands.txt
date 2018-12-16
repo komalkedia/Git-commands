@@ -141,3 +141,21 @@ Set the local branch one revision back (HEAD^ means one revision back):
 git reset --hard HEAD^
 Push the changes to origin:
 git push --force
+
+Pull requests for the project may come from many different authors (forks), and you probably don't want a separate remote for each fork. Also, you don't want to make any assumptions about the branch the author used when submitting the pull request, or what else might be in the author's master branch. So it's better to reference the pull request as it appears in the upstream repository, rather than as it appears in the other forks.
+
+Step 1:
+
+git remote add upstream <url>
+You've probably already done this step, but if not, you'll want a remote defined for the upstream project. The URL is the clone URL of the project you forked. More info at Configuring a remote for a fork and Syncing a fork.  upstream is the name you are giving to the remote, and while it can be anything,  upstream is the conventional name.
+
+Step 2:
+
+git pull upstream refs/pull/{id}/head
+... where {id} is the pull request number.  upstream is the name of the remote to pull from, i.e. just "upstream" if you followed step 1 exactly. It can also be a URL, in which case you can skip step 1.
+
+Step 3:
+
+Type in a commit message for the merge commit. You can keep the default, although I recommend giving a nice one-line summary with the pull request number, the issue it fixes, and a short description:
+
+Merge PR#42, fixing VIM-652, support for mapping arbitrary IDEA actions
